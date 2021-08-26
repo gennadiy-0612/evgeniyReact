@@ -1,186 +1,222 @@
 import React from 'react';
-import Images from '../assets/img/index'
 
 function ChoiceZone() {
-    function handleClick(e) {
-        e.preventDefault();
-        console.log('Посилання було натиснуте.');
+    let controlList = [];
+    let controlItems = [];
+    let controlClasses = {
+        0: 'HideAutoDetail',
+        1: 'ShowAutoDetail'
+    };
+
+    function cashedControls() {
+        if (!controlList[0]) {
+            controlList = document.querySelectorAll('.kind.li');
+            controlItems = document.querySelectorAll('.techno');
+        }
     }
+
+    function MechanicList(e) {
+        cashedControls();
+        e.preventDefault();
+        e.target.setAttribute('class', 'active kind li mechanic Choice Active');
+        controlList[1].setAttribute('class', 'automate kind li not-active Choice NotActive');
+        controlItems[1].classList.add(controlClasses["0"]);
+        controlItems[0].classList.remove(controlClasses["0"]);
+        controlItems[1].classList.add(controlClasses["1"]);
+        controlItems[0].classList.remove(controlClasses["1"]);
+    }
+
+    function AutoList(e) {
+        cashedControls();
+        e.preventDefault();
+        e.target.setAttribute('class', 'automate kind li not-active Choice Active');
+        controlList[0].setAttribute('class', 'active kind li mechanic Choice NotActive');
+        controlItems[0].classList.add(controlClasses["0"]);
+        controlItems[1].classList.remove(controlClasses["0"]);
+        controlItems[0].classList.add(controlClasses["1"]);
+        controlItems[1].classList.remove(controlClasses["1"]);
+    }
+
     return (
         <div className="choice zone">
-            <h2 class="choice title">ОБЕРІТЬ АВТОМОБІЛЬ</h2>
-            <h3 class="variant">Оберіть різновид <strong>КПП</strong></h3>
-            <ul class="what">
-                <li  onClick={handleClick} className=" li">Механічна</li>
-            <li onClick={handleClick} className=" li">Автоматична</li>
+            <h2 className="choice title">ОБЕРІТЬ АВТОМОБІЛЬ</h2>
+            <h3 className="variant">Оберіть різновид <strong>КПП</strong></h3>
+            <ul className="what">
+                <li onClick={MechanicList} className="active kind li">Механічна</li>
+                <li onClick={AutoList} className="kind li">Автоматична</li>
             </ul>
-    // <div class="techno auto {{autoDetailAct}}">
-    //     <div class="car">
-    //         <div class="data">
-    //             <h3 class="info read">ВАЗ kalina</h3>
-    //             <ol class="info">
-    //                 <li class="text read">Застава:</li>
-    //                 <li class="mean read">5 тыс грн</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Різновид КПП:</li>
-    //                 <li class="mean read">Механіка</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Кузов/привід:</li>
-    //                 <li class="mean read">Хетчбэк 5 дв/передній</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Паливо/витрати:</li>
-    //                 <li class="mean read">(АИ-95) 8л/100км</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Доп. опції:</li>
-    //                 <li class="mean read">-</li>
-    //             </ol>
-    //             <div class="info order">
-    //                 <p class="changing"><a routerLink="#" title="Title" class="read">Виберіть автомобіль</a></p>
-    //                 <div class="add">
-    //                     <p class="read">Вартість:</p>
-    //                     <p class="read price"><strong>900</strong> грн/день</p>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </div>
-    //     <div class="car">
-    //         <div class="data">
-    //             <h3 class="info read">ВАЗ 2112</h3>
-    //             <ol class="info">
-    //                 <li class="text read">Застава:</li>
-    //                 <li class="mean read">5 тыс грн</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Різновид КПП:</li>
-    //                 <li class="mean read">Механіка</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Кузов/привід:</li>
-    //                 <li class="mean read">Хетчбэк 5 дв/передній</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Паливо/витрати:</li>
-    //                 <li class="mean read">(АИ-95) 8л/100км</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Доп. опції:</li>
-    //                 <li class="mean read">-</li>
-    //             </ol>
-    //             <div class="info order">
-    //                 <p class="changing"><a routerLink="#" title="Title" class="read">Виберіть автомобіль</a></p>
-    //                 <div class="add">
-    //                     <p class="read">Вартість:</p>
-    //                     <p class="read price"><strong>800</strong> грн/день</p>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </div>
-    // <div class="techno mech {{techDetailAct}}">
-    //     <div class="car">
-    //         <div class="data">
-    //             <h3 class="info read">Mazda 6</h3>
-    //             <ol class="info">
-    //                 <li class="text read">Застава:</li>
-    //                 <li class="mean read">10 тыс грн</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Різновид КПП:</li>
-    //                 <li class="mean read">Автоматическая</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Кузов/привід:</li>
-    //                 <li class="mean read">Седан/передній</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Паливо/витрати:</li>
-    //                 <li class="mean read">(АИ-95) 8л/100км</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Доп. опції:</li>
-    //                 <li class="mean read">Кондиціонер</li>
-    //             </ol>
-    //             <div class="info order">
-    //                 <p class="changing"><a routerLink="#" title="Title" class="read">Виберіть автомобіль</a></p>
-    //                 <div class="add">
-    //                     <p class="read">Вартість:</p>
-    //                     <p class="read price"><strong>1300</strong> грн/день</p>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </div>
-    //     <div class="car">
-    //         <div class="data">
-    //             <h3 class="info read">Chevrolet Lacetti</h3>
-    //             <ol class="info">
-    //                 <li class="text read">Застава:</li>
-    //                 <li class="mean read">10 тыс грн</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Різновид КПП:</li>
-    //                 <li class="mean read">Автоматическая</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Кузов/привід:</li>
-    //                 <li class="mean read">Седан/передній</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Паливо/витрати:</li>
-    //                 <li class="mean read">(АИ-95) 8л/100км</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Доп. опції:</li>
-    //                 <li class="mean read">Кондиціонер</li>
-    //             </ol>
-    //             <div class="info order">
-    //                 <p class="changing"><a routerLink="#" title="Title" class="read">Виберіть автомобіль</a></p>
-    //                 <div class="add">
-    //                     <p class="read">Вартість:</p>
-    //                     <p class="read price"><strong>1200</strong> грн/день</p>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </div>
-    //     <div class="car">
-    //         <div class="data">
-    //             <h3 class="info read">Chevrolet Aveo</h3>
-    //             <ol class="info">
-    //                 <li class="text read">Застава:</li>
-    //                 <li class="mean read">10 тыс грн</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Різновид КПП:</li>
-    //                 <li class="mean read">Автоматическая</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Кузов/привід:</li>
-    //                 <li class="mean read">Седан/передній</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Паливо/витрати:</li>
-    //                 <li class="mean read">(АИ-95) 8л/100км</li>
-    //             </ol>
-    //             <ol class="info">
-    //                 <li class="text read">Доп. опції:</li>
-    //                 <li class="mean read">Кондиціонер</li>
-    //             </ol>
-    //             <div class="info order">
-    //                 <p class="changing"><a routerLink="#" title="Title" class="read">Виберіть автомобіль</a></p>
-    //                 <div class="add">
-    //                     <p class="read">Вартість:</p>
-    //                     <p class="read price"><strong>1400</strong> грн/день</p>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     </div>
-    // </div>
-</div>
+            <div className="techno auto">
+                <div className="car">
+                    <div className="data">
+                        <h3 className="info read">ВАЗ kalina</h3>
+                        <ol className="info">
+                            <li className="text read">Застава:</li>
+                            <li className="mean read">5 тыс грн</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Різновид КПП:</li>
+                            <li className="mean read">Механіка</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Кузов/привід:</li>
+                            <li className="mean read">Хетчбэк 5 дв/передній</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Паливо/витрати:</li>
+                            <li className="mean read">(АИ-95) 8л/100км</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Доп. опції:</li>
+                            <li className="mean read">-</li>
+                        </ol>
+                        <div className="info order">
+                            <p className="changing"><a href="/#" title="Title" className="read">Виберіть автомобіль</a>
+                            </p>
+                            <div className="add">
+                                <p className="read">Вартість:</p>
+                                <p className="read price"><strong>900</strong> грн/день</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="car">
+                    <div className="data">
+                        <h3 className="info read">ВАЗ 2112</h3>
+                        <ol className="info">
+                            <li className="text read">Застава:</li>
+                            <li className="mean read">5 тыс грн</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Різновид КПП:</li>
+                            <li className="mean read">Механіка</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Кузов/привід:</li>
+                            <li className="mean read">Хетчбэк 5 дв/передній</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Паливо/витрати:</li>
+                            <li className="mean read">(АИ-95) 8л/100км</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Доп. опції:</li>
+                            <li className="mean read">-</li>
+                        </ol>
+                        <div className="info order">
+                            <p className="changing"><a href="/#" title="Title" className="read">Виберіть автомобіль</a>
+                            </p>
+                            <div className="add">
+                                <p className="read">Вартість:</p>
+                                <p className="read price"><strong>800</strong> грн/день</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="techno mech">
+                <div className="car">
+                    <div className="data">
+                        <h3 className="info read">Mazda 6</h3>
+                        <ol className="info">
+                            <li className="text read">Застава:</li>
+                            <li className="mean read">10 тыс грн</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Різновид КПП:</li>
+                            <li className="mean read">Автоматическая</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Кузов/привід:</li>
+                            <li className="mean read">Седан/передній</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Паливо/витрати:</li>
+                            <li className="mean read">(АИ-95) 8л/100км</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Доп. опції:</li>
+                            <li className="mean read">Кондиціонер</li>
+                        </ol>
+                        <div className="info order">
+                            <p className="changing"><a href="/#" title="Title" className="read">Виберіть автомобіль</a>
+                            </p>
+                            <div className="add">
+                                <p className="read">Вартість:</p>
+                                <p className="read price"><strong>1300</strong> грн/день</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="car">
+                    <div className="data">
+                        <h3 className="info read">Chevrolet Lacetti</h3>
+                        <ol className="info">
+                            <li className="text read">Застава:</li>
+                            <li className="mean read">10 тыс грн</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Різновид КПП:</li>
+                            <li className="mean read">Автоматическая</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Кузов/привід:</li>
+                            <li className="mean read">Седан/передній</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Паливо/витрати:</li>
+                            <li className="mean read">(АИ-95) 8л/100км</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Доп. опції:</li>
+                            <li className="mean read">Кондиціонер</li>
+                        </ol>
+                        <div className="info order">
+                            <p className="changing"><a href="/#" title="Title" className="read">Виберіть автомобіль</a>
+                            </p>
+                            <div className="add">
+                                <p className="read">Вартість:</p>
+                                <p className="read price"><strong>1200</strong> грн/день</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="car">
+                    <div className="data">
+                        <h3 className="info read">Chevrolet Aveo</h3>
+                        <ol className="info">
+                            <li className="text read">Застава:</li>
+                            <li className="mean read">10 тыс грн</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Різновид КПП:</li>
+                            <li className="mean read">Автоматическая</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Кузов/привід:</li>
+                            <li className="mean read">Седан/передній</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Паливо/витрати:</li>
+                            <li className="mean read">(АИ-95) 8л/100км</li>
+                        </ol>
+                        <ol className="info">
+                            <li className="text read">Доп. опції:</li>
+                            <li className="mean read">Кондиціонер</li>
+                        </ol>
+                        <div className="info order">
+                            <p className="changing"><a href="/#" title="Title" className="read">Виберіть автомобіль</a>
+                            </p>
+                            <div className="add">
+                                <p className="read">Вартість:</p>
+                                <p className="read price"><strong>1400</strong> грн/день</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-)
+    )
 }
 
 export default ChoiceZone;

@@ -1,5 +1,4 @@
 import React from 'react';
-import Images from '../assets/img/index'
 
 function Back() {
 

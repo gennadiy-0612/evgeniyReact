@@ -1,2135 +1,2136 @@
 @font-face {
-  font-family: 'Proxima Nova';
-  src: local('Proxima Nova black'), url('../fonts/Proxima Nova black.ttf') format('truetype');
-  font-display: swap;
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova black'), url('../fonts/Proxima Nova black.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: local('Proxima Nova bold'), url('../fonts/Proxima Nova bold.ttf') format('truetype');
-  font-display: swap;
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova bold'), url('../fonts/Proxima Nova bold.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: local('Proxima Nova extrabold'), url('../fonts/Proxima Nova extrabold.ttf') format('truetype');
-  font-display: swap;
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova extrabold'), url('../fonts/Proxima Nova extrabold.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: local('Proxima Nova Light'), url('../fonts/Proxima Nova Light.otf') format('truetype');
-  font-display: swap;
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Light'), url('../fonts/Proxima Nova Light.otf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: local('Proxima Nova Regular'), url('../fonts/Proxima Nova Regular.otf') format('truetype');
-  font-display: swap;
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular'), url('../fonts/Proxima Nova Regular.otf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: local('Proxima Nova semibold'), url('../fonts/Proxima Nova semibold.ttf') format('truetype');
-  font-display: swap;
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova semibold'), url('../fonts/Proxima Nova semibold.ttf') format('truetype');
+    font-display: swap;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 @media (max-width: 500px) {
-  .buttons {
-    flex-direction: column;
-  }
+    .buttons {
+        flex-direction: column;
+    }
 
-  .buttons .make.choice {
-    margin: 10px auto;
-  }
+    .buttons .make.choice {
+        margin: 10px auto;
+    }
 
-  a.make.choice {
-    margin: 30px 0 0;
-  }
+    a.make.choice {
+        margin: 30px 0 0;
+    }
 }
 
 @media (max-width: 1199px) {
-  .common.title, .name, .map, .address, .address ~ *, .to.order.make, .nets, .car ol.info, .our, .slider .make, .slider .counter, .rent-auto p:nth-of-type(4)::after {
-    display: none;
-  }
-
-  h1, h2, h3, h4, a, p, li, ul, h6 {
-    color: #333;
-    font: normal small-caps 100 12px/30px 'Proxima Nova', serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    list-style-type: none;
-  }
-
-  .top-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .logo {
-    height: 100px;
-    display: block;
-    width: 42%;
-    position: relative;
-    margin: 35px 0 0 0;
-  }
-
-  .logo::after, .slogan::after {
-    content: '';
-    width: 70px;
-    height: 40px;
-    display: block;
-    position: absolute;
-    top: 4px;
-    right: 0;
-    background: url(../img/hide-car.png) center center no-repeat;
-    background-size: contain;
-  }
-
-  .slogan::after {
-    background-color: black;
-    width: 2px;
-    height: 70px;
-    left: -11%;
-  }
-
-  .logo img {
-    width: auto;
-    height: 50px;
-    margin: 0 0 0 28%;
-  }
-
-  .slogan {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    position: relative;
-    left: -8%;
-    display: flex;
-    margin: 21px 0 0;
-    padding: 24px 0;
-    width: 42%;
-  }
-
-  .sub.title, .choice.title, .conditions .t, .free .cons, .advantage .t, .emotions .t, .rent-auto .t, .faq .t {
-    margin: 3px 0 0 0;
-    font-size: 25px;
-    font-weight: 900;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  /*Rent*/
-  .per.day, .variant {
-    font-size: 15px;
-    text-align: center;
-    margin: 19px 0 0 0;
-  }
-
-  .make {
-    margin: 44px auto 0;
-  }
-
-  .image {
-    max-width: 342px;
-    height: 125px;
-    margin: 44px auto 0;
-    background: url(../img/2012-toyota-camry.png) center no-repeat;
-    background-size: contain;
-  }
-
-  .arrow {
-    width: 44px;
-    height: 77px;
-    margin: 34px auto 65px;
-    display: block;
-  }
-
-  /*Features*/
-  .back:nth-of-type(1) {
-  }
-
-  .features {
-    background-color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .features li {
-    list-style-type: none;
-    line-height: 17px;
-    text-align: center;
-    color: white;
-    font-size: 13px;
-    margin: 8px 0 0 0;
-  }
-
-  li.digits {
-    border-bottom: 1px solid #fff;
-    width: 70%;
-    margin: auto;
-    font-size: 23px;
-    font-weight: 900;
-    line-height: 28px;
-    padding: 0 0 5px;
-  }
-
-  li.description {
-    margin: 6px auto;
-  }
-
-  .compact {
-    padding: 0;
-    max-width: 116px;
-  }
-
-  /*Choice*/
-  .choice.title {
-    font-size: 25px;
-    margin: 76px auto 18px;
-  }
-
-  .variant {
-    font-size: 16px;
-  }
-
-  .what {
-    display: flex;
-    margin: 8px auto;
-    width: 300px;
-    padding: 0;
-  }
-
-  .kind {
-    width: 141px;
-    height: 35px;
-    margin: 0 2%;
-    line-height: 34px;
-    font-size: 14px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    border: 1px solid #333333;
-  }
-
-  .techno {
-    margin: 31px 0 0;
-  }
-
-  .car {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    margin: 0 auto 49px;
-    padding: 150px 0 0;
-  }
-
-  .data {
-    background: #333333;
-    padding: 4px 13px 9px;
-    border-radius: 0 0 8px 8px;
-  }
-
-  .car li, .car h3 {
-    color: #fff;
-  }
-
-  .car:nth-child(1), .car:nth-child(2), .car:nth-child(3) {
-    margin: 18px 16px -8px;
-  }
-
-  .car:nth-child(1) {
-    background: url(../img/mazda-6.png) top center no-repeat;
-    background-size: 346px 248px;
-    background-position-y: -49px;
-  }
-
-  .car:nth-child(2) {
-    background: url(../img/chevrolet-lacetti.png) top center no-repeat;
-    background-size: 346px 243px;
-    background-position-y: -49px;
-  }
-
-  .car:nth-child(3) {
-    background: url(../img/chevrolet-aveo.png) top center no-repeat;
-    background-size: 311px 222px;
-    background-position-y: -44px;
-  }
-
-  .car .info {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-
-  .car .read {
-    color: #fff;
-    margin: 0;
-    line-height: 22px;
-  }
-
-  .add {
-    margin: 0 7% 0 0;
-  }
-
-  .add .read {
-    text-align: left;
-    font-size: 14px;
-  }
-
-  .add .price strong {
-    font-size: 18px;
-  }
-
-  .car h3.info {
-    justify-content: center;
-    padding: 12px 0 8px;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 3px;
-  }
-
-  .changing {
-    margin: 0;
-  }
-
-  .car a.read {
-    height: 33px;
-    line-height: 32px;
-    width: 168px;
-    font-size: 14px;
-    background-color: #fff;
-  }
-
-  /*Cond*/
-  .conditions .t {
-    margin: 84px 0 0;
-  }
-
-  .conditions .d {
-    font-size: 18px;
-    margin: 11px 0 0 19%;
-    line-height: 22px;
-  }
-
-  /*Condition*/
-  .condition {
-    margin: 21px 9% 0;
-  }
-
-  .images {
-  }
-
-  .images img {
-    height: 50px;
-    margin: 5px 0 2px;
-  }
-
-  .conditions .view, .condition .view {
-    display: flex;
-    margin: 0 0 9px 9%;
-  }
-
-  .view .text {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 5px 6% 0 14%;
-    font-weight: 600;
-  }
-
-  /*free cons*/
-  .free {
-    background-color: #333;
-    padding: 0 0 20px;
-  }
-
-  .free .cons {
-    margin: 64px 0 0;
-    color: #fff;
-    padding: 16px 0 22px;
-    font-size: 28px;
-  }
-
-  .call-back {
-    background-color: #fff;
-    margin: 0 8%;
-    padding: 17px 8% 13px;
-    position: relative;
-    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-  }
-
-  .call-back::after, .slider::after {
-    height: 5px;
-    bottom: -5px;
-    content: '';
-    width: 96%;
-    background-color: #fff;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    border-radius: 0 0 8px 8px;
-  }
-
-  .tf {
-    font-size: 24px;
-    text-align: center;
-    text-indent: -17px;
-    font-weight: 600;
-  }
-
-  .free .massage {
-    margin-top: 4px;
-  }
-
-  .massage {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 20px;
-    margin: 5px 0 23px;
-  }
-
-  .call-back input {
-    border-radius: 8px;
-    border: 1px solid #333;
-    margin: 0 0 26px;
-    padding: 0 4%;
-    width: 92%;
-    height: 46px;
-    text-align: center;
-  }
-
-  input.send-number {
-    margin: 14px 0 0;
-    height: 48px;
-    width: 100%;
-  }
-
-  .agreed {
-    display: flex;
-  }
-
-  .call-back .agree {
-    height: 10px;
-    width: 20px;
-    margin: 14px 0 0;
-  }
-
-  .agreement {
-    line-height: 15px;
-    margin: 10px 0 0 10px;
-    font-size: 10px;
-  }
-
-  /*advantage*/
-  .advantage .t {
-    margin: 74px 0 0;
-  }
-
-  .advantage .text {
-    margin-top: 7px;
-    margin-bottom: 0;
-    line-height: 15px;
-  }
-
-  /*emotions*/
-  .emotions {
-    position: relative;
-  }
-
-  .emotions .t {
-    margin: 64px 0 22px;
-  }
-
-  .slider.show {
-    display: block;
-    background: #FFFFFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    width: 58%;
-    margin: auto;
-    padding: 16px 5% 0 5%;
-    position: relative;
-  }
-
-  .slider {
-    display: none;
-  }
-
-  .slider::after, .call-back::after {
-    bottom: -6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  }
-
-  .slider p.port {
-    border-radius: 125px;
-    background: url(../img/catirina.png) no-repeat;
-    background-size: contain;
-    width: 102px;
-    height: 101px;
-    box-shadow: 0 0 4px 0 #949494;
-    margin: auto;
-  }
-
-  .emotions .slider p.port {
-    background-size: cover;
-  }
-
-  .tt {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 11px 0 6px;
-    text-indent: 14px;
-  }
-
-  .te {
-    font-size: 15px;
-    line-height: 19px;
-    padding: 0 2% 20px 0;
-  }
-
-  .back-go, .forward-go {
-    position: absolute;
-    top: 143px;
-    width: 28px;
-    height: 35px;
-    display: block;
-    background: url(../img/arrows.svg) center center no-repeat;
-    background-size: contain;
-  }
-
-  .back-go {
-    left: 5%;
-    transform: rotate(90deg);
-  }
-
-  .forward-go {
-    right: 5%;
-    transform: rotate(-90deg);
-  }
-
-  .buttons {
-    padding: 10px 0;
-    display: flex;
-  }
-
-  .buttons .make.choice {
-    display: block;
-    margin: 20px auto;
-  }
-
-  .counter {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
-  }
-
-  /*rent-auto*/
-  .rent-auto {
-    counter-reset: section;
-    max-width: 410px;
-    margin: auto;
-  }
-
-  .rent-auto .t {
-    margin: 83px 0 0;
-  }
-
-  .rent-auto h4, .rent-auto p {
-    margin: 0 4% 0 28%;
-  }
-
-  .rent-auto h4 {
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 13px;
-    font-size: 18px;
-    line-height: 20px;
-    margin-top: 26px;
-  }
-
-  .rent-auto p {
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 0;
-    margin-bottom: 54px;
-    position: relative;
-  }
-
-  .rent-auto h4::after, .rent-auto p::after {
-    position: absolute;
-    content: '';
-    width: 40px;
-    height: 40px;
-    border-radius: 21px;
-    display: block;
-    border: 2px solid #333;
-    left: -35%;
-    top: -19.3%;
-    background-color: #ffffff;
-    z-index: 1;
-    text-align: center;
-    font-size: 29px;
-    line-height: 40px;
-  }
-
-  .rent-auto h4::after {
-    counter-increment: section;
-    content: counter(section) "";
-  }
-
-  .rent-auto p::after {
-    width: 0;
-    color: #333;
-    height: 240%;
-    z-index: 0;
-    left: -27%;
-    top: -37px;
-  }
-
-  /*faq*/
-  .faq .t {
-    margin: 62px 0 0;
-  }
-
-  .flexing {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 25px 0 0;
-    margin: auto;
-  }
-
-  .slide {
-    position: relative;
-    width: 84%;
-    margin: 0 auto 15px;
-    background: #FFFFFF;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    padding: 8px 4%;
-    min-height: 53px;
-  }
-
-  .slide .agree {
-    position: absolute;
-    right: 5%;
-    top: 20px;
-    z-index: 1;
-    opacity: 0;
-    width: 40px;
-    height: 25px;
-  }
-
-  .slide h4 {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 6px 23% 0 0;
-    font-weight: 300;
-  }
-
-  .slide p {
-    line-height: 18px;
-    font-size: 13px;
-    margin-right: 19%;
-    font-weight: 300;
-  }
-
-  .slide .agree + h4::after {
-    content: '';
-    height: 25px;
-    width: 42px;
-    background: url(../img/arrow-down.svg) center center no-repeat #fff;
-    display: block;
-    position: absolute;
-    right: 6%;
-    top: 22px;
-    z-index: 0;
-  }
-
-  .slide .agree:checked + h4::after {
-    transform: rotate(180deg);
-  }
-
-  .agree + h4 + p {
-    display: none;
-    opacity: 0;
-    transition-duration: .7s;
-    transition-property: opacity;
-  }
-
-  .agree:checked + h4 + p {
-    display: block;
-    height: auto;
-    opacity: 1;
-  }
-
-  .questions {
-    margin: 9px auto 73px;
-    width: 153px;
-  }
-
-  /*contact*/
-  .contact {
-    margin: 0 0 81px;
-  }
-
-  .contact .tf {
-  }
-
-  .contact .call-back .tf {
-    font-size: 31px;
-    max-width: 263px;
-    font-weight: 700;
-    line-height: 38px;
-    text-indent: 0;
-    text-align: left;
-  }
-
-  .contact .massage {
-    margin-bottom: 27px;
-    font-size: 23px;
-  }
-
-  .contact input {
-    height: 48px;
-    margin-bottom: 13px;
-  }
-
-  .contact .mask {
-    margin-bottom: 10px;
-  }
-
-  .contact .send-number {
-    margin-bottom: 0;
-  }
-
-  .more.q {
-    margin: 0;
-    padding: 0;
-  }
-
-  a.questions {
-    margin: 20px 0 60px;
-  }
-
-  /*footer*/
-  footer {
-    background-color: #333;
-    position: relative;
-  }
-
-  footer .top-info {
-    display: block;
-  }
-
-  footer .logo {
-    position: absolute;
-    bottom: 9px;
-  }
-
-  footer .logo::after, .slogan::after {
-    filter: invert(.8);
-  }
-
-  .slogan::after {
-    filter: invert(1);
-  }
-
-  footer .slogan {
-    color: #fff;
-    position: absolute;
-    right: 8%;
-    left: auto;
-    bottom: 43px;
-    display: block;
-  }
-
-  footer .nets .name {
-    position: absolute;
-    left: 0;
-    top: 8px;
-    right: 0;
-    margin: auto;
-    width: 100px;
-    font-size: 14px;
-  }
-
-  footer .nets .name, footer .confident {
-    text-align: center;
-    color: #fff;
-    display: block;
-    width: auto;
-  }
-
-  footer .nets {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin: auto;
-    padding: 20px 0 0 0;
-  }
-
-  footer .icon {
-    margin: 118px 6% 40px;
-  }
-
-  footer .confident {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    left: 0;
-    right: 0;
-  }
-
-  footer .confident a {
-    color: #fff;
-    font-size: 14px;
-    display: block;
-    line-height: 52px;
-  }
-
-  footer ul.top.phones {
-    position: relative;
-    bottom: 180px;
-    color: white;
-    display: block;
-  }
-
-  footer .top.phones a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    font-size: 24px;
-  }
-
-  footer .work.time {
-    color: #fff;
-    text-align: center;
-    font-size: 13px;
-    line-height: 35px;
-    text-indent: -6%;
-    text-decoration: underline;
-    max-width: 100%;
-  }
-
-  footer .nets li img {
-    height: 32px;
-    width: 31px;
-  }
+    .common.title, .name, .map, .address, .address ~ *, .to.order.make, .nets, .car ol.info, .our, .slider .make, .slider .counter, .rent-auto p:nth-of-type(4)::after {
+        display: none;
+    }
+
+    h1, h2, h3, h4, a, p, li, ul, h6 {
+        color: #333;
+        font: normal small-caps 100 12px/30px 'Proxima Nova', serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .top-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 100px;
+        display: block;
+        width: 42%;
+        position: relative;
+        margin: 35px 0 0 0;
+    }
+
+    .logo::after, .slogan::after {
+        content: '';
+        width: 70px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        top: 4px;
+        right: 0;
+        background: url(../img/hide-car.png) center center no-repeat;
+        background-size: contain;
+    }
+
+    .slogan::after {
+        background-color: black;
+        width: 2px;
+        height: 70px;
+        left: -11%;
+    }
+
+    .logo img {
+        width: auto;
+        height: 50px;
+        margin: 0 0 0 28%;
+    }
+
+    .slogan {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        position: relative;
+        left: -8%;
+        display: flex;
+        margin: 21px 0 0;
+        padding: 24px 0;
+        width: 42%;
+    }
+
+    .sub.title, .choice.title, .conditions .t, .free .cons, .advantage .t, .emotions .t, .rent-auto .t, .faq .t {
+        margin: 3px 0 0 0;
+        font-size: 25px;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    /*Rent*/
+    .per.day, .variant {
+        font-size: 15px;
+        text-align: center;
+        margin: 19px 0 0 0;
+    }
+
+    .make {
+        margin: 44px auto 0;
+    }
+
+    .image {
+        max-width: 342px;
+        height: 125px;
+        margin: 44px auto 0;
+        background: url(../img/2012-toyota-camry.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .arrow {
+        width: 44px;
+        height: 77px;
+        margin: 34px auto 65px;
+        display: block;
+    }
+
+    /*Features*/
+    .back:nth-of-type(1) {
+    }
+
+    .features {
+        background-color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .features li {
+        list-style-type: none;
+        line-height: 17px;
+        text-align: center;
+        color: white;
+        font-size: 13px;
+        margin: 8px 0 0 0;
+    }
+
+    li.digits {
+        border-bottom: 1px solid #fff;
+        width: 70%;
+        margin: auto;
+        font-size: 23px;
+        font-weight: 900;
+        line-height: 28px;
+        padding: 0 0 5px;
+    }
+
+    li.description {
+        margin: 6px auto;
+    }
+
+    .compact {
+        padding: 0;
+        max-width: 116px;
+    }
+
+    /*Choice*/
+    .choice.title {
+        font-size: 25px;
+        margin: 76px auto 18px;
+    }
+
+    .variant {
+        font-size: 16px;
+    }
+
+    .what {
+        display: flex;
+        margin: 8px auto;
+        width: 300px;
+        padding: 0;
+    }
+
+    .kind {
+        width: 141px;
+        height: 35px;
+        margin: 0 2%;
+        line-height: 34px;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        border: 1px solid #333333;
+    }
+
+    .techno {
+        margin: 31px 0 0;
+    }
+
+    .car {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        margin: 0 auto 49px;
+        padding: 150px 0 0;
+    }
+
+    .data {
+        background: #333333;
+        padding: 4px 13px 9px;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .car li, .car h3 {
+        color: #fff;
+    }
+
+    .car:nth-child(1), .car:nth-child(2), .car:nth-child(3) {
+        margin: 18px 16px -8px;
+    }
+
+    .car:nth-child(1) {
+        background: url(../img/mazda-6.png) top center no-repeat;
+        background-size: 346px 248px;
+        background-position-y: -49px;
+    }
+
+    .car:nth-child(2) {
+        background: url(../img/chevrolet-lacetti.png) top center no-repeat;
+        background-size: 346px 243px;
+        background-position-y: -49px;
+    }
+
+    .car:nth-child(3) {
+        background: url(../img/chevrolet-aveo.png) top center no-repeat;
+        background-size: 311px 222px;
+        background-position-y: -44px;
+    }
+
+    .car .info {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .car .read {
+        color: #fff;
+        margin: 0;
+        line-height: 22px;
+    }
+
+    .add {
+        margin: 0 7% 0 0;
+    }
+
+    .add .read {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .add .price strong {
+        font-size: 18px;
+    }
+
+    .car h3.info {
+        justify-content: center;
+        padding: 12px 0 8px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    .changing {
+        margin: 0;
+    }
+
+    .car a.read {
+        height: 33px;
+        line-height: 32px;
+        width: 168px;
+        font-size: 14px;
+        background-color: #fff;
+    }
+
+    /*Cond*/
+    .conditions .t {
+        margin: 84px 0 0;
+    }
+
+    .conditions .d {
+        font-size: 18px;
+        margin: 11px 0 0 19%;
+        line-height: 22px;
+    }
+
+    /*Condition*/
+    .condition {
+        margin: 21px 9% 0;
+    }
+
+    .images {
+    }
+
+    .images img {
+        height: 50px;
+        margin: 5px 0 2px;
+    }
+
+    .conditions .view, .condition .view {
+        display: flex;
+        margin: 0 0 9px 9%;
+    }
+
+    .view .text {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 5px 6% 0 14%;
+        font-weight: 600;
+    }
+
+    /*free cons*/
+    .free {
+        background-color: #333;
+        padding: 0 0 20px;
+    }
+
+    .free .cons {
+        margin: 64px 0 0;
+        color: #fff;
+        padding: 16px 0 22px;
+        font-size: 28px;
+    }
+
+    .call-back {
+        background-color: #fff;
+        margin: 0 8%;
+        padding: 17px 8% 13px;
+        position: relative;
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    }
+
+    .call-back::after, .slider::after {
+        height: 5px;
+        bottom: -5px;
+        content: '';
+        width: 96%;
+        background-color: #fff;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .tf {
+        font-size: 24px;
+        text-align: center;
+        text-indent: -17px;
+        font-weight: 600;
+    }
+
+    .free .massage {
+        margin-top: 4px;
+    }
+
+    .massage {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        margin: 5px 0 23px;
+    }
+
+    .call-back input {
+        border-radius: 8px;
+        border: 1px solid #333;
+        margin: 0 0 26px;
+        padding: 0 4%;
+        width: 92%;
+        height: 46px;
+        text-align: center;
+    }
+
+    input.send-number {
+        margin: 14px 0 0;
+        height: 48px;
+        width: 100%;
+    }
+
+    .agreed {
+        display: flex;
+    }
+
+    .call-back .agree {
+        height: 10px;
+        width: 20px;
+        margin: 14px 0 0;
+    }
+
+    .agreement {
+        line-height: 15px;
+        margin: 10px 0 0 10px;
+        font-size: 10px;
+    }
+
+    /*advantage*/
+    .advantage .t {
+        margin: 74px 0 0;
+    }
+
+    .advantage .text {
+        margin-top: 7px;
+        margin-bottom: 0;
+        line-height: 15px;
+    }
+
+    /*emotions*/
+    .emotions {
+        position: relative;
+    }
+
+    .emotions .t {
+        margin: 64px 0 22px;
+    }
+
+    .slider.show {
+        display: block;
+        background: #FFFFFF;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        width: 58%;
+        margin: auto;
+        padding: 16px 5% 0 5%;
+        position: relative;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .slider::after, .call-back::after {
+        bottom: -6px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .slider p.port {
+        border-radius: 125px;
+        background: url(../img/catirina.png) no-repeat;
+        background-size: contain;
+        width: 102px;
+        height: 101px;
+        box-shadow: 0 0 4px 0 #949494;
+        margin: auto;
+    }
+
+    .emotions .slider p.port {
+        background-size: cover;
+    }
+
+    .tt {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 11px 0 6px;
+        text-indent: 14px;
+    }
+
+    .te {
+        font-size: 15px;
+        line-height: 19px;
+        padding: 0 2% 20px 0;
+    }
+
+    .back-go, .forward-go {
+        position: absolute;
+        top: 143px;
+        width: 28px;
+        height: 35px;
+        display: block;
+        background: url(../img/arrows.svg) center center no-repeat;
+        background-size: contain;
+    }
+
+    .back-go {
+        left: 5%;
+        transform: rotate(90deg);
+    }
+
+    .forward-go {
+        right: 5%;
+        transform: rotate(-90deg);
+    }
+
+    .buttons {
+        padding: 10px 0;
+        display: flex;
+    }
+
+    .buttons .make.choice {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .counter {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+    }
+
+    /*rent-auto*/
+    .rent-auto {
+        counter-reset: section;
+        max-width: 410px;
+        margin: auto;
+    }
+
+    .rent-auto .t {
+        margin: 83px 0 0;
+    }
+
+    .rent-auto h4, .rent-auto p {
+        margin: 0 4% 0 28%;
+    }
+
+    .rent-auto h4 {
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 13px;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 26px;
+    }
+
+    .rent-auto p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 0;
+        margin-bottom: 54px;
+        position: relative;
+    }
+
+    .rent-auto h4::after, .rent-auto p::after {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 40px;
+        border-radius: 21px;
+        display: block;
+        border: 2px solid #333;
+        left: -35%;
+        top: -19.3%;
+        background-color: #ffffff;
+        z-index: 1;
+        text-align: center;
+        font-size: 29px;
+        line-height: 40px;
+    }
+
+    .rent-auto h4::after {
+        counter-increment: section;
+        content: counter(section) "";
+    }
+
+    .rent-auto p::after {
+        width: 0;
+        color: #333;
+        height: 240%;
+        z-index: 0;
+        left: -27%;
+        top: -37px;
+    }
+
+    /*faq*/
+    .faq .t {
+        margin: 62px 0 0;
+    }
+
+    .flexing {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px 0 0;
+        margin: auto;
+    }
+
+    .slide {
+        position: relative;
+        width: 84%;
+        margin: 0 auto 15px;
+        background: #FFFFFF;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        padding: 8px 4%;
+        min-height: 53px;
+    }
+
+    .slide .agree {
+        position: absolute;
+        right: 5%;
+        top: 20px;
+        z-index: 1;
+        opacity: 0;
+        width: 40px;
+        height: 25px;
+    }
+
+    .slide h4 {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 6px 23% 0 0;
+        font-weight: 300;
+    }
+
+    .slide p {
+        line-height: 18px;
+        font-size: 13px;
+        margin-right: 19%;
+        font-weight: 300;
+    }
+
+    .slide .agree + h4::after {
+        content: '';
+        height: 25px;
+        width: 42px;
+        background: url(../img/arrow-down.svg) center center no-repeat #fff;
+        display: block;
+        position: absolute;
+        right: 6%;
+        top: 22px;
+        z-index: 0;
+    }
+
+    .slide .agree:checked + h4::after {
+        transform: rotate(180deg);
+    }
+
+    .agree + h4 + p {
+        display: none;
+        opacity: 0;
+        transition-duration: .7s;
+        transition-property: opacity;
+    }
+
+    .agree:checked + h4 + p {
+        display: block;
+        height: auto;
+        opacity: 1;
+    }
+
+    .questions {
+        margin: 9px auto 73px;
+        width: 153px;
+    }
+
+    /*contact*/
+    .contact {
+        margin: 0 0 81px;
+    }
+
+    .contact .tf {
+    }
+
+    .contact .call-back .tf {
+        font-size: 31px;
+        max-width: 263px;
+        font-weight: 700;
+        line-height: 38px;
+        text-indent: 0;
+        text-align: left;
+    }
+
+    .contact .massage {
+        margin-bottom: 27px;
+        font-size: 23px;
+    }
+
+    .contact input {
+        height: 48px;
+        margin-bottom: 13px;
+    }
+
+    .contact .mask {
+        margin-bottom: 10px;
+    }
+
+    .contact .send-number {
+        margin-bottom: 0;
+    }
+
+    .more.q {
+        margin: 0;
+        padding: 0;
+    }
+
+    a.questions {
+        margin: 20px 0 60px;
+    }
+
+    /*footer*/
+    footer {
+        background-color: #333;
+        position: relative;
+    }
+
+    footer .top-info {
+        display: block;
+    }
+
+    footer .logo {
+        position: absolute;
+        bottom: 9px;
+    }
+
+    footer .logo::after, .slogan::after {
+        filter: invert(.8);
+    }
+
+    .slogan::after {
+        filter: invert(1);
+    }
+
+    footer .slogan {
+        color: #fff;
+        position: absolute;
+        right: 8%;
+        left: auto;
+        bottom: 43px;
+        display: block;
+    }
+
+    footer .nets .name {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        right: 0;
+        margin: auto;
+        width: 100px;
+        font-size: 14px;
+    }
+
+    footer .nets .name, footer .confident {
+        text-align: center;
+        color: #fff;
+        display: block;
+        width: auto;
+    }
+
+    footer .nets {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+        padding: 20px 0 0 0;
+    }
+
+    footer .icon {
+        margin: 118px 6% 40px;
+    }
+
+    footer .confident {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+
+    footer .confident a {
+        color: #fff;
+        font-size: 14px;
+        display: block;
+        line-height: 52px;
+    }
+
+    footer ul.top.phones {
+        position: relative;
+        bottom: 180px;
+        color: white;
+        display: block;
+    }
+
+    footer .top.phones a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 24px;
+    }
+
+    footer .work.time {
+        color: #fff;
+        text-align: center;
+        font-size: 13px;
+        line-height: 35px;
+        text-indent: -6%;
+        text-decoration: underline;
+        max-width: 100%;
+    }
+
+    footer .nets li img {
+        height: 32px;
+        width: 31px;
+    }
 }
 
 @media (min-width: 1200px) {
-  body {
-    margin: 0;
-  }
-
-  .more.q, .hide {
-    display: none;
-  }
-
-  .main > *, footer .top-info {
-    width: 1200px;
-    margin: auto;
-  }
-
-  /* Header start*/
-  .top-info {
-    margin: 24px auto 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  a.logo {
-    margin: 0 0 0 28px;
-  }
-
-  .logo, .logo img {
-    width: 80px;
-    height: 100px;
-    display: block;
-  }
-
-  .common.title {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: uppercase;
-    margin: 0 0 0 -25px;
-    position: relative;
-    color: #333;
-  }
-
-  .sub.title {
-    font-family: 'Proxima Nova', serif;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 61px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin: 70px 0 0;
-    color: #333;
-  }
-
-  .slogan {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    position: relative;
-    left: -6px;
-  }
-
-  .address {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    text-decoration-line: underline;
-    color: #333333;
-    width: 136px;
-    padding: 0 0 0 60px;
-    background: url(../img/map-point.png) 25px 0 no-repeat;
-  }
-
-  .top.phones {
-    position: relative;
-    top: -1px;
-    right: 9px;
-    margin: 0;
-  }
-
-  .phone {
-    position: relative;
-  }
-
-  .phone::after {
-    content: '';
-    background: #70B632;
-    display: block;
-    height: 5px;
-    width: 5px;
-    position: absolute;
-    left: -16px;
-    top: 11px;
-    border-radius: 3px;
-  }
-
-  .top.phones :last-child {
-    margin: 10px 0 0;
-  }
-
-  .call {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.05em;
-    color: #333333;
-    text-decoration: none;
-  }
-
-  .work.time {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    text-decoration-line: underline;
-    color: #333333;
-  }
-
-  .to.order {
-    width: 187px;
-    position: relative;
-    left: -27px;
-    top: -16px;
-  }
-
-  .per.day {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 37px;
-    text-align: center;
-    color: #333333;
-    margin: 14px 0 0;
-  }
-
-  .make.choice {
-    margin: 61px auto 50px;
-  }
-
-  /*Header finish*/
-  /*Rent start*/
-  .rent {
-    position: relative;
-    padding: 0 0 19px 0;
-    margin: 0 auto 47px;
-  }
-
-  .image {
-    width: 722px;
-    height: 241px;
-    margin: auto;
-    background: url(../img/2012-toyota-camry.png) no-repeat;
-  }
-
-  .arrow {
-    margin: 41px auto 0;
-    display: block;
-  }
-
-  .nets {
-    width: 165px;
-    height: 62px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    position: absolute;
-    right: 168px;
-    bottom: 10px;
-  }
-
-  .name {
-    position: absolute;
-    margin: 0 0 0 -21px;
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #333333;
-    bottom: 63px;
-  }
-
-  .connect {
-    width: 30px;
-    height: 30px;
-  }
-
-  /*Rent finish*/
-  /*Features start*/
-  .back {
-    background-color: #333333;
-    /* width: 100%; */
-  }
-
-  .features {
-    height: 287px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-
-  .features, .advantages {
-    padding: 0;
-    margin: 0;
-  }
-
-  .advantages {
-    position: relative;
-    right: 13px;
-    top: -12px;
-  }
-
-  .compact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 156px;
-    height: 116px;
-    margin: 0 59px;
-    padding: 0;
-  }
-
-  .digits {
-    border-bottom: 1px solid #fff;
-    height: 49px;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 49px;
-    padding: 0 0 16px 0;
-  }
-
-  .description {
-    color: #fff;
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    width: 158px;
-    margin: 17px 0 0 0;
-  }
-
-  li {
-    list-style-type: none;
-  }
-
-  /*Features finish*/
-  /*Choice zone start*/
-  .choice.title, .t, .cons {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 61px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #333333;
-    margin: 75px 0 50px;
-  }
-
-  .variant, .d {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 37px;
-    color: #333333;
-    text-align: center;
-    margin: 0;
-  }
-
-  .what {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin: 24px auto;
-    padding: 0;
-    width: 460px;
-  }
-
-  .kind, .changing .read, .call-back input {
-    border: 1px solid #333333;
-    box-sizing: border-box;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    margin: 0 18px;
-    padding: 16px 28px;
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-  }
-
-  .mechanic {
-    position: relative;
-    left: 7px;
-    padding-right: 33px;
-  }
-
-  .car {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    width: 892px;
-    margin: 0 auto 49px;
-  }
-
-  .car:nth-child(1) {
-    background: url(../img/mazda-6.png) left center no-repeat;
-  }
-
-  .car:nth-child(2) {
-    background: url(../img/chevrolet-lacetti.png) left center no-repeat;
-  }
-
-  .car:nth-child(3) {
-    background: url(../img/chevrolet-aveo.png) left center no-repeat;
-  }
-
-  .data {
-    border-radius: 0 8px 8px 0;
-    margin-left: 51.7%;
-    background: #333333;
-    padding: 24px 24px 17px;
-  }
-
-  .car .info {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .read {
-    color: #fff;
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 29px;
-  }
-
-  .mean {
-    text-align: right;
-    width: 212px;
-    font-weight: 600;
-  }
-
-  .techno {
-    position: relative;
-    width: 1050px;
-    margin: 49px auto;
-  }
-
-  .info.read {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 37px;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    margin: 2px 0 18px;
-  }
-
-  .changing {
-    margin: 20px 0 0 0;
-  }
-
-  .add {
-    width: 132px;
-    padding: 22px 0 0;
-  }
-
-  .add .read {
-    padding: 0;
-    margin: 0 0 6px;
-  }
-
-  .add .price {
-  }
-
-  .price strong {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  /*Choice zone finish*/
-  /*Conditions zone start*/
-  .conditions {
-    /* padding: 0 0 55px 0; */
-  }
-
-  .t {
-    margin: 149px 0 24px;
-  }
-
-  .condition {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 34px auto;
-    width: 1090px;
-    padding: 0 0 0 17px;
-  }
-
-  .condition .view {
-    padding: 0;
-  }
-
-  .cond.details {
-    margin: 0;
-  }
-
-  .cond:nth-child(1) .images {
-    border-bottom: 0;
-  }
-
-  .images {
-    border-bottom: 1px solid #000;
-    padding: 0 0 33px 0;
-  }
-
-  .images img {
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    display: block;
-  }
-
-  .view .text {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    width: 193px;
-    height: 42px;
-    margin: 15px 0;
-    color: #333;
-  }
-
-  /*Free start*/
-  .free {
-    background: url(../img/car.png) 66px 179px no-repeat #333;
-    height: 645px;
-    margin-top: 80px;
-    margin-bottom: 75px;
-    padding: 1px 0 0;
-    position: relative;
-  }
-
-  .cons {
-    color: #fff;
-  }
-
-  .call-back {
-    width: 319px;
-    height: 374px;
-    margin: auto;
-    background-color: #fff;
-    position: relative;
-    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    color: #333;
-    z-index: 1;
-  }
-
-  .agreed::after, .common.title::after {
-    height: 9px;
-    bottom: -9px;
-    box-shadow: 0 12px 7px rgba(0, 0, 0, 0.25);
-    z-index: 0;
-    content: '';
-    background-color: #fff;
-    width: 96%;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    border-radius: 0 0 8px 8px;
-  }
-
-  .common.title::after {
-    width: 2px;
-    height: 70px;
-    background: #333333;
-    right: -507px;
-    top: -11px;
-    box-shadow: none;
-  }
-
-  .tf {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    text-indent: -18px;
-    margin: 0;
-    padding: 19px 0 0;
-    color: #333;
-  }
-
-  .massage {
-    margin: 4px 32px;
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #333;
-  }
-
-  .call-back input {
-    text-indent: 22px;
-    color: #333;
-    margin: 26px auto;
-    display: block;
-    padding: 14px 15px;
-    width: 256px;
-    text-align: center;
-    font-family: 'Proxima Nova', serif;
-    font-size: 14px;
-  }
-
-  input.send-number {
-    margin-top: 39px;
-    margin-bottom: 0;
-    text-indent: 0;
-  }
-
-  .agreed {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 2px 33px 0;
-  }
-
-  input.agree, .agreement {
-    margin: auto;
-    font-family: 'Proxima Nova', serif;
-    font-size: 10px;
-  }
-
-  .agreement {
-    margin-left: 10px;
-    margin-top: 8px;
-  }
-
-  input.agree {
-    height: 15px;
-    width: 15px;
-    margin-top: 7px;
-    margin-right: 13px;
-  }
-
-  .our {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FFFFFF;
-    width: 245px;
-    position: absolute;
-    top: 364px;
-    right: 75px;
-  }
-
-  .our::after, .our::before {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 0;
-    left: -200px;
-    width: 170px;
-    height: 154px;
-  }
-
-  .our::before {
-    left: -116px;
-    top: 60px;
-    background: url(../img/cruel-arrow.svg) 0 0 no-repeat;
-  }
-
-  .our::after {
-    background: url(../img/car-keys.png) 0 0 no-repeat;
-    top: -148px;
-    left: -160px;
-  }
-
-  /*advantage start*/
-  .advantage {
-    width: 900px;
-  }
-
-  .advantage .cond.details {
-    width: 250px;
-    margin: 0 0 59px 0;
-  }
-
-  .advantage .condition {
-    width: 900px;
-    padding: 0;
-  }
-
-  .advantage .view .images {
-    padding-bottom: 24px;
-    border-bottom: 1px solid #000;
-    width: 206px;
-    margin: auto;
-  }
-
-  .advantage .view .text {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 16px;
-    width: auto;
-  }
-
-  .advantage .t {
-    margin-top: 66px;
-    margin-bottom: 43px;
-  }
-
-  /*emotions start*/
-  .emotions::before, .emotions::after {
-    content: '';
-    height: 400px;
-    width: 950px;
-    display: block;
-    position: absolute;
-    top: 110px;
-    left: 0;
-    right: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    margin: auto;
-    z-index: -1;
-  }
-
-  .emotions::before {
-    bottom: -259px;
-    height: 10px;
-    width: 924px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  }
-
-  .emotions {
-    position: relative;
-  }
-
-  .emotions .t {
-    margin-top: 92px;
-  }
-
-  /*slider start*/
-  .slider.show {
-    width: 808px;
-    margin: auto;
-    padding: 88px 201px;
-    position: relative;
-    display: block;
-  }
-
-  .slider {
-    display: none;
-  }
-
-  .slider .port {
-    border-radius: 125px;
-    background: url(../img/catirina.png) no-repeat;
-    width: 250px;
-    height: 250px;
-    box-shadow: 0 0 4px 0 #949494;
-    float: left;
-  }
-
-  .slider .tt {
-    font-family: 'Proxima Nova', serif;
-    font-size: 30px;
-    line-height: 37px;
-    color: #333333;
-    margin: 15px 0 25px 297px;
-  }
-
-  .slider .te {
-    font-family: 'Proxima Nova', serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #333333;
-    margin: 0 0 0 300px;
-  }
-
-  .slider .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 420px;
-  }
-
-  .counter {
-    margin: 2px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .back-go, .forward-go {
-    position: absolute;
-    top: 295px;
-    width: 30px;
-    height: 64px;
-    display: block;
-    background: url(../img/arrows.svg) center center no-repeat;
-  }
-
-  .back-go {
-    left: 42px;
-    transform: rotate(90deg);
-  }
-
-  .forward-go {
-    right: 52px;
-    transform: rotate(-90deg);
-  }
-
-  /*rent-auto start*/
-  .rent-auto {
-    counter-reset: section;
-  }
-
-  .rent-auto .t {
-    margin: 53px auto;
-  }
-
-  .rent-auto h4 {
-    font-family: 'Proxima Nova', serif;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    margin: 0 0 14px 321px;
-    color: #333333;
-    position: relative;
-  }
-
-  .rent-auto h4::after {
-    width: 40px;
-    height: 40px;
-    border-radius: 21px;
-    display: block;
-    border: 2px solid #333333;
-    position: absolute;
-    left: -100px;
-    top: -3px;
-    counter-increment: section;
-    content: counter(section) "";
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 40px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    background-color: #fff;
-  }
-
-  .rent-auto h4::before {
-    content: '';
-    position: absolute;
-    width: 3px;
-    display: block;
-    height: 171px;
-    top: 34px;
-    left: -80px;
-    background: #333333;
-  }
-
-  .rent-auto h4:nth-of-type(4)::before, .rent-auto p:nth-of-type(4)::after {
-    display: none;
-  }
-
-  .rent-auto p {
-    font-family: 'Proxima Nova', serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #333333;
-    margin: 0 391px 106px 321px;
-    position: relative;
-  }
-
-  .rent-auto p:last-child {
-    margin-bottom: 163px;
-  }
-
-  .rent-auto p::after {
-    content: 'Приблизно 5 хвилин';
-    position: absolute;
-    display: block;
-    left: -293px;
-    top: 65px;
-  }
-
-  /*faq*/
-  .slide {
-    background: #FFFFFF;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    width: 558px;
-    margin: 0 0 25px 0;
-    padding: 17px 0;
-    position: relative;
-  }
-
-  .agree:checked + h4 + p {
-    display: block;
-    height: 73px;
-    opacity: 1;
-  }
-
-  .agree + h4 + p {
-    display: none;
-    opacity: 0;
-    transition-duration: .7s;
-    transition-property: opacity;
-  }
-
-  .flexing {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 1146px;
-    padding: 26px 27px;
-    margin: auto;
-  }
-
-  .slide .agree {
-    position: absolute;
-    right: 3px;
-    top: 30px;
-    z-index: 1;
-    opacity: 0;
-    width: 40px;
-    height: 25px;
-  }
-
-  .slide .agree + h4::after {
-    content: '';
-    height: 25px;
-    width: 42px;
-    background: url(../img/arrow-down.svg) center center no-repeat #fff;
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 30px;
-    z-index: 0;
-  }
-
-  .slide .agree:checked + h4::after {
-    transform: rotate(180deg);
-  }
-
-  .slide h4 {
-    font-family: 'Proxima Nova', serif;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    color: #333333;
-    margin: 15px 20px;
-    width: 476px;
-  }
-
-  .slide p {
-    font-family: 'Proxima Nova', serif;
-    font-size: 14px;
-    line-height: 17px;
-    color: #333333;
-    margin: 15px 20px;
-    width: 458px;
-  }
-
-  /*Contacts*/
-  .contact {
-    margin: -300px auto 0;
-  }
-
-  .contact .call-back {
-    position: relative;
-    top: 441px;
-    left: -268px;
-    z-index: 1;
-  }
-
-  .contact .call-back h3 {
-    font-family: 'Proxima Nova', serif;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 37px;
-    width: 200px;
-    text-indent: 0;
-  }
-
-  .contact .call-back .massage {
-    font-family: 'Proxima Nova', serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    color: #333333;
-    margin: 0 31px 24px;
-  }
-
-  .contact .call-back input {
-    margin: 16px auto;
-  }
-
-  .contact .call-name, .contact .call-phone {
-    background-color: #333;
-    color: #fff;
-  }
-
-  .contact input.send-number {
-    margin: 24px auto 0;
-  }
-
-  .contact img {
-    top: 48px;
-    display: block;
-    position: relative;
-    left: 418px;
-    margin-bottom: 104px;
-  }
-
-  /*footer start*/
-  footer {
-    background-color: #333;
-    padding: 54px 0;
-    margin: 190px 0 0;
-  }
-
-  footer .top-info {
-    position: relative;
-    padding: 0 0;
-    margin: 21px auto;
-  }
-
-  footer .top-info, footer .top-info a, footer .top-info p {
-    color: #fff;
-  }
-
-  footer .common.title::after {
-    background-color: #fff;
-  }
-
-  footer .nets {
-    left: 5px;
-    top: 18px;
-    position: relative;
-  }
-
-  footer .name {
-    color: #fff;
-  }
-
-  footer .confident {
-    font-family: 'Proxima Nova', serif;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration-line: underline;
-  }
-
-  footer .phone::after {
-    content: none;
-  }
-
-  footer .work.time {
-    color: #fff;
-  }
-
-  #result_form:not(:empty) {
-    position: fixed;
-    width: 300px;
-    height: 100px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background-color: #66ff9c;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 0 6px 1px #5c5c5c;
-  }
-
-  #result_form h6 {
-    margin: 0;
-    text-align: center;
-    font-size: 19px;
-    line-height: 13px;
-  }
-
-  #result_form .close {
-    position: absolute;
-    top: 11px;
-    right: 17px;
-    margin: 0;
-    border-radius: 10px;
-    box-shadow: 0 0 7px 2px black;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    background-color: rgba(255, 0, 0, 0.85);
-  }
-
-  .Choice.Active {
-    color: #FFFFFF;
-    background-color: #333333;
-  }
-
-  .Choice.NotActive {
-    background-color: #FFFFFF;
-    color: #333333;
-  }
-
-  .techno {
-    transition-property: left;
-    transition-duration: .9s;
-  }
-
-  .ShowAutoDetail,
-  .ShowTechDetail {
-    display: block;
-  }
-
-  .HideAutoDetail,
-  .HideTechDetail {
-    display: none;
-  }
+    body {
+        margin: 0;
+    }
+
+    .more.q, .hide {
+        display: none;
+    }
+
+    .main > *, footer .top-info {
+        width: 1200px;
+        margin: auto;
+    }
+
+    /* Header start*/
+    .top-info {
+        margin: 24px auto 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a.logo {
+        margin: 0 0 0 28px;
+    }
+
+    .logo, .logo img {
+        width: 80px;
+        height: 100px;
+        display: block;
+    }
+
+    .common.title {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin: 0 0 0 -25px;
+        position: relative;
+        color: #333;
+    }
+
+    .sub.title {
+        font-family: 'Proxima Nova', serif;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 61px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin: 70px 0 0;
+        color: #333;
+    }
+
+    .slogan {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        position: relative;
+        left: -6px;
+    }
+
+    .address {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: #333333;
+        width: 136px;
+        padding: 0 0 0 60px;
+        background: url(../img/map-point.png) 25px 0 no-repeat;
+    }
+
+    .top.phones {
+        position: relative;
+        top: -1px;
+        right: 9px;
+        margin: 0;
+    }
+
+    .phone {
+        position: relative;
+    }
+
+    .phone::after {
+        content: '';
+        background: #70B632;
+        display: block;
+        height: 5px;
+        width: 5px;
+        position: absolute;
+        left: -16px;
+        top: 11px;
+        border-radius: 3px;
+    }
+
+    .top.phones :last-child {
+        margin: 10px 0 0;
+    }
+
+    .call {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.05em;
+        color: #333333;
+        text-decoration: none;
+    }
+
+    .work.time {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: #333333;
+    }
+
+    .to.order {
+        width: 187px;
+        position: relative;
+        left: -27px;
+        top: -16px;
+    }
+
+    .per.day {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        color: #333333;
+        margin: 14px 0 0;
+    }
+
+    .make.choice {
+        margin: 61px auto 50px;
+    }
+
+    /*Header finish*/
+    /*Rent start*/
+    .rent {
+        position: relative;
+        padding: 0 0 19px 0;
+        margin: 0 auto 47px;
+    }
+
+    .image {
+        width: 722px;
+        height: 241px;
+        margin: auto;
+        background: url(../img/2012-toyota-camry.png) no-repeat;
+    }
+
+    .arrow {
+        margin: 41px auto 0;
+        display: block;
+    }
+
+    .nets {
+        width: 165px;
+        height: 62px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        position: absolute;
+        right: 168px;
+        bottom: 10px;
+    }
+
+    .name {
+        position: absolute;
+        margin: 0 0 0 -21px;
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+        bottom: 63px;
+    }
+
+    .connect {
+        width: 30px;
+        height: 30px;
+    }
+
+    /*Rent finish*/
+    /*Features start*/
+    .back {
+        background-color: #333333;
+        /* width: 100%; */
+    }
+
+    .features {
+        height: 287px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .features, .advantages {
+        padding: 0;
+        margin: 0;
+    }
+
+    .advantages {
+        position: relative;
+        right: 13px;
+        top: -12px;
+    }
+
+    .compact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 156px;
+        height: 116px;
+        margin: 0 59px;
+        padding: 0;
+    }
+
+    .digits {
+        border-bottom: 1px solid #fff;
+        height: 49px;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 49px;
+        padding: 0 0 16px 0;
+    }
+
+    .description {
+        color: #fff;
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        width: 158px;
+        margin: 17px 0 0 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    /*Features finish*/
+    /*Choice zone start*/
+    .choice.title, .t, .cons {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 61px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #333333;
+        margin: 75px 0 50px;
+    }
+
+    .variant, .d {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 37px;
+        color: #333333;
+        text-align: center;
+        margin: 0;
+    }
+
+    .what {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: 24px auto;
+        padding: 0;
+        width: 460px;
+    }
+
+    .kind, .changing .read, .call-back input {
+        border: 1px solid #333333;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        margin: 0 18px;
+        padding: 16px 28px;
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .mechanic {
+        position: relative;
+        left: 7px;
+        padding-right: 33px;
+    }
+
+    .car {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        width: 892px;
+        margin: 0 auto 49px;
+    }
+
+    .car:nth-child(1) {
+        background: url(../img/mazda-6.png) left center no-repeat;
+    }
+
+    .car:nth-child(2) {
+        background: url(../img/chevrolet-lacetti.png) left center no-repeat;
+    }
+
+    .car:nth-child(3) {
+        background: url(../img/chevrolet-aveo.png) left center no-repeat;
+    }
+
+    .data {
+        border-radius: 0 8px 8px 0;
+        margin-left: 51.7%;
+        background: #333333;
+        padding: 24px 24px 17px;
+    }
+
+    .car .info {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .read {
+        color: #fff;
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 29px;
+    }
+
+    .mean {
+        text-align: right;
+        width: 212px;
+        font-weight: 600;
+    }
+
+    .techno {
+        position: relative;
+        width: 1050px;
+        margin: 49px auto;
+    }
+
+    .info.read {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        margin: 2px 0 18px;
+    }
+
+    .changing {
+        margin: 20px 0 0 0;
+    }
+
+    .add {
+        width: 132px;
+        padding: 22px 0 0;
+    }
+
+    .add .read {
+        padding: 0;
+        margin: 0 0 6px;
+    }
+
+    .add .price {
+    }
+
+    .price strong {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    /*Choice zone finish*/
+    /*Conditions zone start*/
+    .conditions {
+        /* padding: 0 0 55px 0; */
+    }
+
+    .t {
+        margin: 149px 0 24px;
+    }
+
+    .condition {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 34px auto;
+        width: 1090px;
+        padding: 0 0 0 17px;
+    }
+
+    .condition .view {
+        padding: 0;
+    }
+
+    .cond.details {
+        margin: 0;
+    }
+
+    .cond:nth-child(1) .images {
+        border-bottom: 0;
+    }
+
+    .images {
+        border-bottom: 1px solid #000;
+        padding: 0 0 33px 0;
+    }
+
+    .images img {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        display: block;
+    }
+
+    .view .text {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        width: 193px;
+        height: 42px;
+        margin: 15px 0;
+        color: #333;
+    }
+
+    /*Free start*/
+    .free {
+        background: url(../img/car.png) 66px 179px no-repeat #333;
+        height: 645px;
+        margin-top: 80px;
+        margin-bottom: 75px;
+        padding: 1px 0 0;
+        position: relative;
+    }
+
+    .cons {
+        color: #fff;
+    }
+
+    .call-back {
+        width: 319px;
+        height: 374px;
+        margin: auto;
+        background-color: #fff;
+        position: relative;
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        color: #333;
+        z-index: 1;
+    }
+
+    .agreed::after, .common.title::after {
+        height: 9px;
+        bottom: -9px;
+        box-shadow: 0 12px 7px rgba(0, 0, 0, 0.25);
+        z-index: 0;
+        content: '';
+        background-color: #fff;
+        width: 96%;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .common.title::after {
+        width: 2px;
+        height: 70px;
+        background: #333333;
+        right: -507px;
+        top: -11px;
+        box-shadow: none;
+    }
+
+    .tf {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        text-indent: -18px;
+        margin: 0;
+        padding: 19px 0 0;
+        color: #333;
+    }
+
+    .massage {
+        margin: 4px 32px;
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333;
+    }
+
+    .call-back input {
+        text-indent: 22px;
+        color: #333;
+        margin: 26px auto;
+        display: block;
+        padding: 14px 15px;
+        width: 256px;
+        text-align: center;
+        font-family: 'Proxima Nova', serif;
+        font-size: 14px;
+    }
+
+    input.send-number {
+        margin-top: 39px;
+        margin-bottom: 0;
+        text-indent: 0;
+    }
+
+    .agreed {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2px 33px 0;
+    }
+
+    input.agree, .agreement {
+        margin: auto;
+        font-family: 'Proxima Nova', serif;
+        font-size: 10px;
+    }
+
+    .agreement {
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+
+    input.agree {
+        height: 15px;
+        width: 15px;
+        margin-top: 7px;
+        margin-right: 13px;
+    }
+
+    .our {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        width: 245px;
+        position: absolute;
+        top: 364px;
+        right: 75px;
+    }
+
+    .our::after, .our::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 0;
+        left: -200px;
+        width: 170px;
+        height: 154px;
+    }
+
+    .our::before {
+        left: -116px;
+        top: 60px;
+        background: url(../img/cruel-arrow.svg) 0 0 no-repeat;
+    }
+
+    .our::after {
+        background: url(../img/car-keys.png) 0 0 no-repeat;
+        top: -148px;
+        left: -160px;
+    }
+
+    /*advantage start*/
+    .advantage {
+        width: 900px;
+    }
+
+    .advantage .cond.details {
+        width: 250px;
+        margin: 0 0 59px 0;
+    }
+
+    .advantage .condition {
+        width: 900px;
+        padding: 0;
+    }
+
+    .advantage .view .images {
+        padding-bottom: 24px;
+        border-bottom: 1px solid #000;
+        width: 206px;
+        margin: auto;
+    }
+
+    .advantage .view .text {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 16px;
+        width: auto;
+    }
+
+    .advantage .t {
+        margin-top: 66px;
+        margin-bottom: 43px;
+    }
+
+    /*emotions start*/
+    .emotions::before, .emotions::after {
+        content: '';
+        height: 400px;
+        width: 950px;
+        display: block;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        margin: auto;
+        z-index: -1;
+    }
+
+    .emotions::before {
+        bottom: -259px;
+        height: 10px;
+        width: 924px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .emotions {
+        position: relative;
+    }
+
+    .emotions .t {
+        margin-top: 92px;
+    }
+
+    /*slider start*/
+    .slider.show {
+        width: 808px;
+        margin: auto;
+        padding: 88px 201px;
+        position: relative;
+        display: block;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .slider .port {
+        border-radius: 125px;
+        background: url(../img/catirina.png) no-repeat;
+        width: 250px;
+        height: 250px;
+        box-shadow: 0 0 4px 0 #949494;
+        float: left;
+    }
+
+    .slider .tt {
+        font-family: 'Proxima Nova', serif;
+        font-size: 30px;
+        line-height: 37px;
+        color: #333333;
+        margin: 15px 0 25px 297px;
+    }
+
+    .slider .te {
+        font-family: 'Proxima Nova', serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        margin: 0 0 0 300px;
+    }
+
+    .slider .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 420px;
+    }
+
+    .counter {
+        margin: 2px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .back-go, .forward-go {
+        position: absolute;
+        top: 295px;
+        width: 30px;
+        height: 64px;
+        display: block;
+        background: url(../img/arrows.svg) center center no-repeat;
+    }
+
+    .back-go {
+        left: 42px;
+        transform: rotate(90deg);
+    }
+
+    .forward-go {
+        right: 52px;
+        transform: rotate(-90deg);
+    }
+
+    /*rent-auto start*/
+    .rent-auto {
+        counter-reset: section;
+    }
+
+    .rent-auto .t {
+        margin: 53px auto;
+    }
+
+    .rent-auto h4 {
+        font-family: 'Proxima Nova', serif;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        margin: 0 0 14px 321px;
+        color: #333333;
+        position: relative;
+    }
+
+    .rent-auto h4::after {
+        width: 40px;
+        height: 40px;
+        border-radius: 21px;
+        display: block;
+        border: 2px solid #333333;
+        position: absolute;
+        left: -100px;
+        top: -3px;
+        counter-increment: section;
+        content: counter(section) "";
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        background-color: #fff;
+    }
+
+    .rent-auto h4::before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        display: block;
+        height: 171px;
+        top: 34px;
+        left: -80px;
+        background: #333333;
+    }
+
+    .rent-auto h4:nth-of-type(4)::before, .rent-auto p:nth-of-type(4)::after {
+        display: none;
+    }
+
+    .rent-auto p {
+        font-family: 'Proxima Nova', serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #333333;
+        margin: 0 391px 106px 321px;
+        position: relative;
+    }
+
+    .rent-auto p:last-child {
+        margin-bottom: 163px;
+    }
+
+    .rent-auto p::after {
+        content: 'Приблизно 5 хвилин';
+        position: absolute;
+        display: block;
+        left: -293px;
+        top: 65px;
+    }
+
+    /*faq*/
+    .slide {
+        background: #FFFFFF;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        width: 558px;
+        margin: 0 0 25px 0;
+        padding: 17px 0;
+        position: relative;
+    }
+
+    .agree:checked + h4 + p {
+        display: block;
+        height: 73px;
+        opacity: 1;
+    }
+
+    .agree + h4 + p {
+        display: none;
+        opacity: 0;
+        transition-duration: .7s;
+        transition-property: opacity;
+    }
+
+    .flexing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 1146px;
+        padding: 26px 27px;
+        margin: auto;
+    }
+
+    .slide .agree {
+        position: absolute;
+        right: 3px;
+        top: 30px;
+        z-index: 1;
+        opacity: 0;
+        width: 40px;
+        height: 25px;
+    }
+
+    .slide .agree + h4::after {
+        content: '';
+        height: 25px;
+        width: 42px;
+        background: url(../img/arrow-down.svg) center center no-repeat #fff;
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 30px;
+        z-index: 0;
+    }
+
+    .slide .agree:checked + h4::after {
+        transform: rotate(180deg);
+    }
+
+    .slide h4 {
+        font-family: 'Proxima Nova', serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        margin: 15px 20px;
+        width: 476px;
+    }
+
+    .slide p {
+        font-family: 'Proxima Nova', serif;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+        margin: 15px 20px;
+        width: 458px;
+    }
+
+    /*Contacts*/
+    .contact {
+        margin: -300px auto 0;
+    }
+
+    .contact .call-back {
+        position: relative;
+        top: 441px;
+        left: -268px;
+        z-index: 1;
+    }
+
+    .contact .call-back h3 {
+        font-family: 'Proxima Nova', serif;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        width: 200px;
+        text-indent: 0;
+    }
+
+    .contact .call-back .massage {
+        font-family: 'Proxima Nova', serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #333333;
+        margin: 0 31px 24px;
+    }
+
+    .contact .call-back input {
+        margin: 16px auto;
+    }
+
+    .contact .call-name, .contact .call-phone {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .contact input.send-number {
+        margin: 24px auto 0;
+    }
+
+    .contact img {
+        top: 48px;
+        display: block;
+        position: relative;
+        left: 418px;
+        margin-bottom: 104px;
+    }
+
+    /*footer start*/
+    footer {
+        background-color: #333;
+        padding: 54px 0;
+        margin: 190px 0 0;
+    }
+
+    footer .top-info {
+        position: relative;
+        padding: 0 0;
+        margin: 21px auto;
+    }
+
+    footer .top-info, footer .top-info a, footer .top-info p {
+        color: #fff;
+    }
+
+    footer .common.title::after {
+        background-color: #fff;
+    }
+
+    footer .nets {
+        left: 5px;
+        top: 18px;
+        position: relative;
+    }
+
+    footer .name {
+        color: #fff;
+    }
+
+    footer .confident {
+        font-family: 'Proxima Nova', serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: underline;
+    }
+
+    footer .phone::after {
+        content: none;
+    }
+
+    footer .work.time {
+        color: #fff;
+    }
+
+    #result_form:not(:empty) {
+        position: fixed;
+        width: 300px;
+        height: 100px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        background-color: #66ff9c;
+        border-radius: 8px;
+        padding: 16px;
+        box-shadow: 0 0 6px 1px #5c5c5c;
+        display: none;
+    }
+
+    #result_form h6 {
+        margin: 0;
+        text-align: center;
+        font-size: 19px;
+        line-height: 13px;
+    }
+
+    #result_form .close {
+        position: absolute;
+        top: 11px;
+        right: 17px;
+        margin: 0;
+        border-radius: 10px;
+        box-shadow: 0 0 7px 2px black;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        background-color: rgba(255, 0, 0, 0.85);
+    }
+
+    .Choice.Active {
+        color: #FFFFFF;
+        background-color: #333333;
+    }
+
+    .Choice.NotActive {
+        background-color: #FFFFFF;
+        color: #333333;
+    }
+
+    .techno {
+        transition-property: left;
+        transition-duration: .9s;
+    }
+
+    .ShowAutoDetail,
+    .ShowTechDetail {
+        display: block;
+    }
+
+    .HideAutoDetail,
+    .HideTechDetail {
+        display: none;
+    }
 }
 
 @media (max-width: 270px) {
-  .techno .car {
-    background-size: 100% auto;
-    background-position-y: initial;
-  }
+    .techno .car {
+        background-size: 100% auto;
+        background-position-y: initial;
+    }
 }
 
 @media (max-width: 375px) {
-  h1, li, a, p {
-    word-break: break-all;
-  }
+    h1, li, a, p {
+        word-break: break-all;
+    }
 
-  .changing {
-    margin: 15px auto;
-    width: max-content;
-  }
+    .changing {
+        margin: 15px auto;
+        width: max-content;
+    }
 
-  .make {
-    max-width: 145px;
-  }
+    .make {
+        max-width: 145px;
+    }
 
-  .car .info {
-    display: block;
-  }
+    .car .info {
+        display: block;
+    }
 
-  .add {
-    margin: 15px auto 0;
-    display: flex;
-    justify-content: space-around;
-  }
+    .add {
+        margin: 15px auto 0;
+        display: flex;
+        justify-content: space-around;
+    }
 
-  .techno .car {
-    background-size: 100% auto;
-    /* background-position-y: initial; */
-  }
+    .techno .car {
+        background-size: 100% auto;
+        /* background-position-y: initial; */
+    }
 
-  .what {
-    display: block;
-    width: auto;
-  }
+    .what {
+        display: block;
+        width: auto;
+    }
 
-  .kind {
-    margin: 20px auto;
-    padding: 0;
-  }
+    .kind {
+        margin: 20px auto;
+        padding: 0;
+    }
 }
 
 @media (max-width: 400px) {
-  /*Header mobile*/
-  .address, .top.phones, .to.order, .desktop {
-    display: none;
-  }
+    /*Header mobile*/
+    .address, .top.phones, .to.order, .desktop {
+        display: none;
+    }
 
-  h1.common.title {
-    left: -123px;
-    top: 73px;
-  }
+    h1.common.title {
+        left: -123px;
+        top: 73px;
+    }
 
-  .car .changing .read {
-    margin: 0;
-    padding: 10px;
-  }
+    .car .changing .read {
+        margin: 0;
+        padding: 10px;
+    }
 
-  ul.features {
-    flex-direction: column;
-    align-content: center;
-  }
+    ul.features {
+        flex-direction: column;
+        align-content: center;
+    }
 
-  .buttons {
-    flex-direction: column;
-  }
+    .buttons {
+        flex-direction: column;
+    }
 
-  .buttons .make.choice {
-    margin: 5px auto;
-  }
+    .buttons .make.choice {
+        margin: 5px auto;
+    }
 
-  .mobile.slog {
-    font-size: 84px;
-  }
+    .mobile.slog {
+        font-size: 84px;
+    }
 
-  .vertical {
-    transform: rotate(-91deg);
-    display: block;
-    position: relative;
-    left: 0;
-    margin: 0 0 0 100px;
-  }
+    .vertical {
+        transform: rotate(-91deg);
+        display: block;
+        position: relative;
+        left: 0;
+        margin: 0 0 0 100px;
+    }
 }
 
 .per.day + p, .q {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .make.choice, .to.order, .questions {
-  margin: 89px 12px;
-  display: block;
-  height: 47px;
-  width: max-content;
-  line-height: 46px;
-  border-radius: 8px;
-  box-shadow: 0 0 4px #333;
-  text-align: center;
-  text-decoration: none;
-  font-family: 'Proxima Nova', serif;
-  color: #333;
-  padding: 0 25px;
+    margin: 89px 12px;
+    display: block;
+    height: 47px;
+    width: max-content;
+    line-height: 46px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px #333;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Proxima Nova', serif;
+    color: #333;
+    padding: 0 25px;
 }
 
 div.car a.read {
-  width: auto;
-  background-color: white;
-  line-height: 25px;
-  color: #333;
+    width: auto;
+    background-color: white;
+    line-height: 25px;
+    color: #333;
 }
 
 .changing .read {
-  background: #333;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
-  padding: 16px 35px;
-  margin: 13px 0 0 2px;
-  text-decoration: none;
-  border-radius: 8px;
+    background: #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    padding: 16px 35px;
+    margin: 13px 0 0 2px;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
 .changing a.read, li.automate, .active, .make.choice, .mechanic, .call-back input, .slider .make.choice, .to.order, .slider .make.choice, .counter span, .counter .active {
-  transition-property: color, background-color;
-  transition-duration: .7s;
+    transition-property: color, background-color;
+    transition-duration: .7s;
 }
 
 .changing a.read:hover, li.automate:hover, .active, .make.choice:hover, .mechanic:hover, .call-back input:hover, .slider .make.choice:hover, .to.order:hover, .slider .make.choice:hover, .counter span:hover, .counter .active {
-  color: #fff;
-  background-color: #333;
+    color: #fff;
+    background-color: #333;
 }
 
 .slider:nth-of-type(1) .port {
-  background: url(../img/catirina.png) no-repeat;
+    background: url(../img/catirina.png) no-repeat;
 }
 
 .slider:nth-of-type(2) .port {
-  background: url(../img/otziv2.png) no-repeat;
+    background: url(../img/otziv2.png) no-repeat;
 }
 
 .slider:nth-of-type(3) .port {
-  background: url(../img/otziv3.png) no-repeat;
+    background: url(../img/otziv3.png) no-repeat;
 }
 
 .slider:nth-of-type(4) .port {
-  background: url(../img/otziv4.png) no-repeat;
+    background: url(../img/otziv4.png) no-repeat;
 }
 
 .slider:nth-of-type(5) .port {
-  background: url(../img/otziv5.png) no-repeat;
+    background: url(../img/otziv5.png) no-repeat;
 }
 
 .counter span {
-  font-family: 'Proxima Nova', serif;
-  font-size: 20px;
-  line-height: 12px;
-  margin: 6px;
-  color: #333;
-  box-shadow: 0 0 1px black;
-  padding: 8px;
-  background-color: gainsboro;
-  border-radius: 4px;
+    font-family: 'Proxima Nova', serif;
+    font-size: 20px;
+    line-height: 12px;
+    margin: 6px;
+    color: #333;
+    box-shadow: 0 0 1px black;
+    padding: 8px;
+    background-color: gainsboro;
+    border-radius: 4px;
 }
 
 .result-detail {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 90%;
-  width: 90%;
-  background-color: #82f99a;
-  margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90%;
+    width: 90%;
+    background-color: #82f99a;
+    margin: auto;
 }
 
 .result-detail h6 {
-  text-align: center;
+    text-align: center;
 }
 
 .show, .active {
-  animation: .7s linear 0s infinite alternate move_eye;
-  animation-iteration-count: 1;
+    animation: .7s linear 0s infinite alternate move_eye;
+    animation-iteration-count: 1;
 }
 
 @keyframes move_eye {
-  from {
-    opacity: 0;
-  }
+    from {
+        opacity: 0;
+    }
 
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes appear {
-  from {
-    opacity: 0;
-  }
+    from {
+        opacity: 0;
+    }
 
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 .appear {
-  animation: .7s ease-out 0s infinite alternate appear;
-  animation-iteration-count: 1;
+    animation: .7s ease-out 0s infinite alternate appear;
+    animation-iteration-count: 1;
 }
 
 /*Bug fixed*/
