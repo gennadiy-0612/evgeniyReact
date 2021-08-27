@@ -8,7 +8,11 @@ import Conditions from "./components/Conditions";
 import Free from "./components/Free";
 import Advantages from "./components/Advantages";
 import Emotions from "./components/Emotions";
-import Emotions from "./components/RentAuto";
+import RentAuto from "./components/RentAuto";
+import Faq from "./components/Faq";
+import MoreFaq from "./components/MoreFaq";
+import Contact from "./components/Contacts";
+import Foot from "./components/Foot";
 
 function App() {
     return (
@@ -21,11 +25,11 @@ function App() {
             <Free/>
             <Advantages/>
             <Emotions/>
-            {/*<app-rentauto></app-rentauto>*/}
-            {/*<app-faq></app-faq>*/}
-            {/*<app-morefaq></app-morefaq>*/}
-            {/*<app-contacts></app-contacts>*/}
-            {/*<app-foot></app-foot>*/}
+            <RentAuto/>
+            <Faq/>
+            <MoreFaq/>
+            <Contact/>
+            <Foot/>
         </div>
     );
 }

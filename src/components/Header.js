@@ -9,7 +9,7 @@ function Header() {
             </a>
             <h1 className="common title"><span className="desktop">Оренда авто</span></h1>
             <p className="slogan">Автомобіль який<br/>вас не підведе</p>
-            <p className="address">Вільна вулиця, 16 м. Бєлгород</p>
+            <p className="address">Вільна вулиця, 16<br/>  м. Бєлгород</p>
             <ul className="top phones">
                 <li className="phone"><a title="Title" className="call" href="tel:+79066000009">+7 (906)
                     600-00-09</a></li>
