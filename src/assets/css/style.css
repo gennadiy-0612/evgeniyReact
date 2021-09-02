@@ -56,6 +56,16 @@ body {
     }
 }
 
+.ShowAutoDetail,
+.ShowTechDetail {
+    display: block;
+}
+
+.HideAutoDetail,
+.HideTechDetail {
+    display: none;
+}
+
 @media (max-width: 1199px) {
     .common.title, .name, .map, .address, .address ~ *, .to.order.make, .nets, .car ol.info, .our, .slider .make, .slider .counter, .rent-auto p:nth-of-type(4)::after {
         display: none;
@@ -1907,16 +1917,6 @@ body {
     .techno {
         transition-property: left;
         transition-duration: .9s;
-    }
-
-    .ShowAutoDetail,
-    .ShowTechDetail {
-        display: block;
-    }
-
-    .HideAutoDetail,
-    .HideTechDetail {
-        display: none;
     }
 }
 
