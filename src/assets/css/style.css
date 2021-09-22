@@ -2177,4 +2177,14 @@ div.car a.read {
     cursor: pointer;
 }
 
+li.Active {
+    color: #fff;
+    background-color: #333;
+}
+
+li.NotActive {
+    background-color: #fff;
+    color: #333;
+}
+
 /*Bug fixed*/
