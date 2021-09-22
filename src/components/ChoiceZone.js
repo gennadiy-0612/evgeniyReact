@@ -5,7 +5,9 @@ function ChoiceZone() {
     let controlItems = [];
     let controlClasses = {
         0: 'HideAutoDetail',
-        1: 'ShowAutoDetail'
+        1: 'ShowAutoDetail',
+        2: 'HideTechDetail',
+        3: 'ShowTechDetail'
     };
 
     function cashedControls() {
@@ -20,10 +22,10 @@ function ChoiceZone() {
         e.preventDefault();
         e.target.setAttribute('class', 'active kind li mechanic Choice Active');
         controlList[1].setAttribute('class', 'automate kind li not-active Choice NotActive');
-        controlItems[1].classList.add(controlClasses["0"]);
+        controlItems[0].classList.add(controlClasses["1"]);
         controlItems[0].classList.remove(controlClasses["0"]);
-        controlItems[1].classList.add(controlClasses["1"]);
-        controlItems[0].classList.remove(controlClasses["1"]);
+        controlItems[1].classList.add(controlClasses["2"]);
+        controlItems[1].classList.remove(controlClasses["3"]);
     }
 
     function AutoList(e) {
@@ -32,9 +34,9 @@ function ChoiceZone() {
         e.target.setAttribute('class', 'automate kind li not-active Choice Active');
         controlList[0].setAttribute('class', 'active kind li mechanic Choice NotActive');
         controlItems[0].classList.add(controlClasses["0"]);
-        controlItems[1].classList.remove(controlClasses["0"]);
-        controlItems[0].classList.add(controlClasses["1"]);
-        controlItems[1].classList.remove(controlClasses["1"]);
+        controlItems[0].classList.remove(controlClasses["1"]);
+        controlItems[1].classList.add(controlClasses["3"]);
+        controlItems[1].classList.remove(controlClasses["2"]);
     }
 
     return (
@@ -42,8 +44,8 @@ function ChoiceZone() {
             <h2 className="choice title">ОБЕРІТЬ АВТОМОБІЛЬ</h2>
             <h3 className="variant">Оберіть різновид <strong>КПП</strong></h3>
             <ul className="what">
-                <li onClick={MechanicList} className="active kind li">Механічна</li>
-                <li onClick={AutoList} className="kind li">Автоматична</li>
+                <li onClick={MechanicList} className="active kind li cursor">Механічна</li>
+                <li onClick={AutoList} className="kind li cursor">Автоматична</li>
             </ul>
             <div className="techno auto">
                 <div className="car">

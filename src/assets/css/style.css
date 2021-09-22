@@ -56,6 +56,10 @@ body {
     }
 }
 
+.mech {
+    display: none;
+}
+
 .ShowAutoDetail,
 .ShowTechDetail {
     display: block;
@@ -261,6 +265,17 @@ body {
 
     .car:nth-child(1), .car:nth-child(2), .car:nth-child(3) {
         margin: 18px 16px -8px;
+    }
+
+
+    .auto .car:nth-child(1) {
+        background: url(../img/vaz-kalina.jpeg) top center no-repeat;
+        background-size: auto 150px;
+    }
+
+    .auto .car:nth-child(2) {
+        background: url(../img/vaz-2112-kupe-red.jpg) top center no-repeat;
+        background-size: auto 150px;
     }
 
     .car:nth-child(1) {
@@ -1183,6 +1198,16 @@ body {
         border-radius: 8px;
         width: 892px;
         margin: 0 auto 49px;
+    }
+
+    .auto .car:nth-child(1) {
+        background: url(../img/vaz-kalina.jpeg) left center no-repeat;
+        background-size: contain;
+    }
+
+    .auto .car:nth-child(2) {
+        background: url(../img/vaz-2112-kupe-red.jpg) left center no-repeat;
+        background-size: 53% auto;
     }
 
     .car:nth-child(1) {
@@ -2131,6 +2156,25 @@ div.car a.read {
 .appear {
     animation: .7s ease-out 0s infinite alternate appear;
     animation-iteration-count: 1;
+}
+
+.techno {
+    animation: bluring .7s;
+}
+
+@keyframes bluring {
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.cursor {
+    cursor: pointer;
 }
 
 /*Bug fixed*/
